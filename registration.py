@@ -361,7 +361,7 @@ class Graph:
 
     def compute_depth(self):
         """Computes depth for each vertex in the graph."""
-    
+
         n = len(self.vertices)
         memo = {}
 
