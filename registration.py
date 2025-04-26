@@ -440,7 +440,7 @@ class Graph:
                         available.append(neighbor)
 
             courses.append(semester)
-            available += available
+            empty += available
 
         return courses
 
