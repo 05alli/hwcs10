@@ -16,7 +16,6 @@ UT EID 1: ann2464
 UT EID 2:
 """
 
-# TODO: Delete this import if you choose not to use it. Delete this comment when you are done.
 import sys
 
 
@@ -362,7 +361,7 @@ class Graph:
 
     def compute_depth(self):
         """Computes depth for each vertex in the graph."""
-        
+    
         n = len(self.vertices)
         memo = {}
 
@@ -376,7 +375,7 @@ class Graph:
                 m = 1 + max(dfs(child) for child in children)
             memo[i] = m
             return m
-        
+    
         for index in range(n):
             self.vertices[index].depth = dfs(index)
 
@@ -400,7 +399,7 @@ class Graph:
                     return True
             in_stack.remove(u)
             return False
-        
+    
         for i in range(n):
             if i not in seen:
                 if dfs(i):
