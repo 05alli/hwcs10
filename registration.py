@@ -375,7 +375,7 @@ class Graph:
                 m = 1 + max(dfs(child) for child in children)
             memo[i] = m
             return m
-    
+
         for index in range(n):
             self.vertices[index].depth = dfs(index)
 
@@ -399,7 +399,7 @@ class Graph:
                     return True
             in_stack.remove(u)
             return False
-    
+
         for i in range(n):
             if i not in seen:
                 if dfs(i):
